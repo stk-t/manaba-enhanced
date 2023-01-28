@@ -25,7 +25,7 @@ const generateManifest = () => {
         "webRequest",
         "webRequestBlocking",
         "downloads",
-        "*://manaba.tsukuba.ac.jp/*",
+        "*://narapu.manaba.jp/*",
       ],
       options_ui: {
         page: "options.html",
@@ -44,12 +44,12 @@ const generateManifest = () => {
         },
         {
           matches: ["https://narapu.manaba.jp/*"],
-          include_globs: ["https://manaba.tsukuba.ac.jp/ct/course_*_report_*"],
+          include_globs: ["https://narapu.manaba.jp/ct/course_*_report_*"],
           js: ["contentScript/reportTemplate.js"],
         },
         {
           matches: ["https://narapu.manaba.jp/*"],
-          include_globs: ["https://manaba.tsukuba.ac.jp/ct/course_*_grade"],
+          include_globs: ["https://narapu.manaba.jp/ct/course_*_grade"],
           js: ["contentScript/showRelativeGradesPosition.js"],
         },
       ],
